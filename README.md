@@ -73,13 +73,6 @@ sudo python3 manage.py runserver 0.0.0.0:8080
 
  ```
  
- Now open three terminals separately on console. Make sure you are in **copenotes_gencay** folder and then run each command in the separate terminal. 
- 
- ```sh
-sudo celery -A copenotes_gencay beat
-sudo celery -A copenotes_gencay  worker --pool=solo -l INFO
-sudo python manage.py runserver 0.0.0.0:8080
-```
 
 Then visualize by clicking **Web preview** icon on the top right with settings **gear icon** and click **Preview on port 8080**
 
@@ -109,7 +102,7 @@ Run the following each command in separate terminals under same environment:
 ```sh
 celery -A copenotes_gencay beat
 celery -A copenotes_gencay  worker --pool=solo -l INFO
-python manage.py runserver 0.0.0.0:8000
+python manage.py runserver 0.0.0.0:8080
 ```
 
 
